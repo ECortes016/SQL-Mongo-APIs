@@ -36,3 +36,26 @@ app.post('/item/add', (req, res) => {
 const port = 3000;
 
 app.listen(port, () => console.log('Server running...'));
+
+
+/* db.table1.insert({
+  name: 'Raymond Gabriel Hernandez Jr',
+  row: 1,
+  os: 'Mac',
+  hobbies: ['Coding', 'Truck', 'Math']
+})
+
+db.table1.find({name: 'Todd Adcox'})
+db.table1.update({name: "Todd Adcox"}, {$push: {"hobbies":"Hulu"}});
+
+db.table1.remove({hobbies: ["Hulu"]})
+
+
+
+
+db.table1.update(
+  { },
+  { $pull: { hobbies: { $in: [ "Hulu" ] }} },
+  { multi: true }
+)
+*/
