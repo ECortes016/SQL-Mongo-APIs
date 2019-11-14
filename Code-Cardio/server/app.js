@@ -48,4 +48,17 @@ app.use(function(err, req, res, next) {
 
 module.exports = app;
 
-app.listen(8080, ()=> console.log('Listening . . .'))
+const PORT = 3000;
+app.listen(PORT, () => {
+  console.log(`running on port ${PORT}`)
+})
+
+// Body Parser
+
+var bodyParser = require('body-parser');
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
+app.use(
+  bodyParser.text()
+)
